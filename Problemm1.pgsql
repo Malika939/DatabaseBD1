@@ -1,0 +1,32 @@
+-- SELECT name, fp_language, sp_language FROM students;
+--2
+- -
+-- SELECT * FROM students WHERE age > 30;
+--3
+-- SELECT * FROM students WHERE fp_language = 'Python' OR sp_language = 'Python';
+--4
+-- SELECT * FROM students WHERE fp_language = 'Python' AND sp_language = 'C#' OR fp_language = 'C#' AND sp_language = 'Java';
+--5
+-- DELETE FROM students WHERE id = 1 AND id = 3 AND id = 5 AND id = 7;
+--6
+-- SELECT * FROM students WHERE MINVALUE IN age;
+--7
+-- DROP TABLE students;
+--8
+-- DROP DATABASE programmers;
+
+-- CREATE TABLE students(id SERIAL PRIMARY KEY, name VARCHAR, age INT, fp_language VARCHAR, sp_language VARCHAR);
+-- INSERT INTO students(name, age, fp_language, sp_language)
+-- VALUES('Bakyt', 23, 'Python', 'C++');
+-- INSERT INTO students(name, age, fp_language, sp_language)
+-- VALUES('Aygul', 46, 'Python', 'Java');
+-- INSERT INTO students(name, age, fp_language, sp_language)
+-- VALUES('Jika', 13, 'C', 'Ruby_On_Rails');
+-- INSERT INTO students(name, age, fp_language, sp_language)
+-- VALUES('Ermek', 16, 'Java', 'C');
+-- INSERT INTO students(name, age, fp_language, sp_language)
+-- VALUES('Artem', 55, 'C#', 'Java');
+-- INSERT INTO students(name, age, fp_language, sp_language)
+-- VALUES('Roma', 31, 'Pascal', 'C');
+-- INSERT INTO students(name, age, fp_language, sp_language)
+-- VALUES('Beka', 25, 'C#', 'JavaScript');
